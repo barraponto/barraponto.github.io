@@ -14,3 +14,9 @@ gem "wdm", "~> 0.1.0", :platforms => [:mswin, :mingw]
 platforms :mri_18 do
   gem "ruby18_source_location"
 end
+
+# Adds Blog features
+gem "middleman-blog", "~> 3.3.0"
+
+# For feed.xml.builder
+gem "builder", "~> 3.0"
