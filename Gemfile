@@ -20,3 +20,6 @@ gem "middleman-blog", "~> 3.3.0"
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
+
+# For article summaries
+gem "nokogiri"
