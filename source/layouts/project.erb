@@ -1,0 +1,14 @@
+<% wrap_layout :layout do %>
+  <h1><%= current_page.data.title || "Mera Falacia" %></H1>
+  <article>
+    <%= yield %>
+  </article>
+
+  <% content_for :sidebar do %>
+    <h2>Links</h2>
+    <ul>
+      <li>Status: <%= current_page.data.status %></li>
+      <li><%= link_to 'Repositorio', current_page.data.repo %></li>
+    </ul>
+  <% end %>
+<% end %>

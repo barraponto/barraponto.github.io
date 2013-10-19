@@ -5,11 +5,11 @@
 # Time.zone = "UTC"
 
 activate :blog do |blog|
-  # blog.prefix = "blog"
+  blog.prefix = "blog"
   # blog.permalink = ":year/:month/:day/:title.html"
   # blog.sources = ":year-:month-:day-:title.html"
   # blog.taglink = "tags/:tag.html"
-  # blog.layout = "layout"
+  blog.layout = "blog"
   # blog.summary_separator = /(READMORE)/
   # blog.summary_length = 250
   # blog.year_link = ":year.html"
@@ -49,9 +49,9 @@ page "/feed.xml", :layout => false
 # page "/path/to/file.html", :layout => :otherlayout
 #
 # A path which all have the same layout
-# with_layout :admin do
-#   page "/admin/*"
-# end
+with_layout :project do
+  page "/projects/*"
+end
 
 # Proxy pages (http://middlemanapp.com/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {
@@ -61,11 +61,14 @@ page "/feed.xml", :layout => false
 # Helpers
 ###
 
+# Clean URLs, without html suffixes.
+activate :directory_indexes
+
 # Automatic image dimensions on image_tag helper
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do
