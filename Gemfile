@@ -23,3 +23,6 @@ gem "builder", "~> 3.0"
 
 # For article summaries
 gem "nokogiri"
+
+# Susy styles
+gem "susy", "~> 1.0.9"
