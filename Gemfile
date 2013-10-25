@@ -26,3 +26,6 @@ gem "nokogiri"
 
 # Susy styles
 gem "susy", "~> 1.0.9"
+
+# Automate deploys
+gem "middleman-deploy"
