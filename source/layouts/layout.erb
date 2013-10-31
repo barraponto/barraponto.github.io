@@ -22,13 +22,19 @@
             <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
         <![endif]-->
 
-        <div id="main" role="main" >
-          <%= yield %>
+        <div class='page'>
+          <div id="main" role="main" >
+            <%= yield %>
+          </div>
+
+          <% if content_for? :sidebar %>
+            <%= partial 'sidebar' %>
+          <% end %>
+
+          <div class="pseudo-footer"></div>
         </div>
 
-        <% if content_for? :sidebar %>
-          <%= partial 'sidebar' %>
-        <% end %>
+        <%= partial 'footer' %>
 
         <%= javascript_include_tag 'vendor/jquery-1.8.0.min.js' %>
         <%= javascript_include_tag 'plugins.js' %>

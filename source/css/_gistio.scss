@@ -1,0 +1,158 @@
+// Defaults ------------------------------------------------------------------
+$default-transition-duration: 0.25s;
+$link: #4da7ca;
+
+@include font-face(
+'LeagueGothic', font-files('LeagueGothic-Regular.otf', otf));
+@include font-face(
+'SortsMillGoudy', font-files('OFLGoudyStM.otf', otf));
+
+@mixin copy {
+  font-family: SortsMillGoudy, Georgia, serif;
+}
+
+@mixin titling {
+  font-family: LeagueGothic;
+}
+
+// Gist.io  ------------------------------------------------------------------
+
+@mixin vector-bg-with-fallback($name) {
+  background-image: url('../img/#{$name}.png');
+  background-image: none, url('../img/#{$name}.svg');
+}
+
+* {
+  @include box-sizing(border-box);
+}
+
+
+html {
+  background-color: #fff;
+}
+
+body {
+  @include copy;
+  color: #444;
+  font-weight: 300;
+}
+
+a {
+  color: $link;
+  @include transition;
+  &:hover, &:visited:hover {
+    color: darken($link, 20%);
+  }
+  &:visited {
+    color: lighten($link, 15%);
+  }
+}
+
+
+// narrow
+// no media queries
+.page {
+  .title {
+    @include titling;
+    font-weight: 500;
+    font-size: 5em;
+    text-transform: uppercase;
+    line-height: 1em;
+  }
+  .breadcrumb {
+    font-weight: normal;
+    color: #ccc;
+    font-size: 0.8em;
+    a {
+      color: #ccc;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.page + footer {
+  border-top: 1px solid #eee;
+  p {
+    font-size: 0.8em;
+    color: #888;
+    font-style: italic;
+    .poweredby {
+      display: inline-block;
+      margin-right: 1em;
+    }
+  }
+}
+
+article {
+  h1, h2, h3, h4, h5 {
+    font-weight: 300;
+    margin-top: 2em;
+    color: black;
+  }
+
+  h1, h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-weight: 400;
+    font-size: 0.925em;
+    margin-top: 3em;
+    text-transform: uppercase;
+  }
+  h4, h5, h6 {
+    font-weight: 400;
+    font-size: 0.925em;
+    margin-top: 3em;
+    font-style: italic;
+  }
+  ul, ol {
+    list-style-position: outside;
+    padding: 0;
+
+    li ul, li ol {
+      margin-left: 1.5em;
+    }
+  }
+  blockquote {
+    margin: 0;
+    padding-left: 1em;
+    border-left: 1px solid #ddd;
+  }
+  ul, ol, p, blockquote {
+    line-height: 1.55em;
+  }
+  img, object, video, audio, figure, iframe {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+  }
+  pre, code, samp {
+    font-family: 'Source Code Pro', monospace;
+  }
+  .highlight {
+    padding: 0.1em 0.5em;
+    background: #1d1f21;
+    font-size: 0.88em
+  }
+}
+
+.jumbo {
+  display: none;
+  position: fixed;
+  width: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #F6F3E8;
+  @include vector-bg-with-fallback("logo");
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center center;
+
+  @media screen and (min-width: 63.236em) {
+    display: block;
+  }
+}
