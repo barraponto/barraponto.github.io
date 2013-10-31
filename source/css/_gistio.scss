@@ -52,12 +52,18 @@ a {
 // narrow
 // no media queries
 .page {
-  .title {
+  h1,h2,h3,h4 {
     @include titling;
     font-weight: 500;
     font-size: 5em;
     text-transform: uppercase;
     line-height: 1em;
+  }
+  h2 {
+    font-size: 3em;
+  }
+  aside h2 {
+    font-size: 2em;
   }
   .breadcrumb {
     font-weight: normal;

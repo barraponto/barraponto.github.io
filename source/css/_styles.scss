@@ -10,6 +10,7 @@ $total-columns: 4;
 .page, footer {
   @include container;
 }
+
 footer > p {
   @include span-columns(4);
 }
@@ -18,7 +19,7 @@ footer > p {
   @include span-columns(4);
 }
 
-@include at-breakpoint(30em 9) {
+@include at-breakpoint(24em 9) {
   .page, footer {
     @include container;
   }
@@ -31,4 +32,26 @@ footer > p {
   footer > p {
     @include span-columns(9);
   }
+}
+
+@include at-breakpoint(32em 12) {
+  .page, footer {
+    @include container;
+  }
+  #main {
+    @include span-columns(6);
+  }
+  aside {
+    @include span-columns(4 omega);
+  }
+  footer > p {
+    @include span-columns(12);
+  }
+}
+
+.page .sub{
+  display: block;
+  text-transform: none;
+  font-size: 0.33em;
+  margin-top: -1em;
 }
