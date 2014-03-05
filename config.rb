@@ -2,7 +2,7 @@
 # Blog settings
 ###
 
-# Time.zone = "UTC"
+set :time_zone, 'America/Sao_Paulo'
 
 activate :blog do |blog|
   blog.prefix = "blog"
