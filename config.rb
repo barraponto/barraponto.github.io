@@ -75,10 +75,9 @@ activate :directory_indexes
 # end
 
 set :css_dir, 'css'
-
 set :js_dir, 'js'
-
 set :images_dir, 'img'
+set :partials_dir, 'partials'
 
 # Development-only configuration
 configure :development do
