@@ -1,7 +1,7 @@
 <% if section_map('projects') %>
   <h2>Projetos em Andamento</h2>
   <ul>
-    <% section_map('projects').each do |resource| %>
+    <% section_map('projects')[0...5].each do |resource| %>
       <li><%= link_to resource.data.title, resource.url %></li>
     <% end %>
   </ul>
