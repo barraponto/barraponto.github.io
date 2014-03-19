@@ -1,3 +1,8 @@
 <aside>
+  <% if current_page.url != '/' %>
+    <h2>Mera Falácia</h2>
+    <p>Um blog de Capi Etheriel</p>
+  <% end %>
+
   <%= yield_content :sidebar %>
 </aside>
