@@ -55,9 +55,11 @@ a {
   h1,h2,h3,h4 {
     @include titling;
     font-weight: 500;
-    font-size: 5em;
     text-transform: uppercase;
     line-height: 1em;
+  }
+  h1 {
+    font-size: 5em;
   }
   h2 {
     font-size: 3em;
