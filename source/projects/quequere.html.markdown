@@ -28,6 +28,7 @@ jogos.
   - Jogadores
   - Duração
 - Descrição
+- Componentes
 - Links:
   - Crowdfunding
   - Comprar
@@ -48,3 +49,10 @@ jogos.
   * Artigos Recentes
   * Tags
   * Arquivo por ano
+
+## Referências
+* [Meeple Virus](http://www.meeplevirus.com.br/)
+* [Bashton Film Critic](http://bahstonfilmcritic.com/)
+* [Kingdoms Brasil](http://kingdoms.com.br/)
+* [Galápagos Jogos](http://www.galapagosjogos.com.br/index.html)
+* [Stonemeier Games](http://stonemaiergames.com/)
