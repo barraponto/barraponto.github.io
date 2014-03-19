@@ -56,3 +56,9 @@ footer > p {
   font-size: 0.33em;
   margin-top: -1em;
 }
+
+.homelink {
+  @include link-colors(black, black, black, black, black);
+  display: block;
+  text-decoration: none;
+}
