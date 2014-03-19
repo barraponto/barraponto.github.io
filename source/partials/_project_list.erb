@@ -1,0 +1,8 @@
+<% if section_map('projects') %>
+  <h2>Projetos em Andamento</h2>
+  <ul>
+    <% section_map('projects').each do |resource| %>
+      <li><%= link_to resource.data.title, resource.url %></li>
+    <% end %>
+  </ul>
+<% end %>
