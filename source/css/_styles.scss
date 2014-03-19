@@ -50,17 +50,30 @@ footer > p {
   }
 }
 
-.page .sub{
+.page .sub {
   display: block;
   text-transform: none;
   font-size: 0.33em;
   margin-top: -1em;
 }
 
+.page h1 {
+  margin-bottom: 0;
+  @include at-breakpoint(24em 9) {
+    margin-bottom: 0.67em;
+  }
+}
+
 .homelink {
   @include link-colors(black, black, black, black, black);
   display: block;
   text-decoration: none;
-  margin-bottom: 4em;
+  @include at-breakpoint(24em 9) {
+    margin-bottom: 6em;
+  }
   h2 { margin-bottom: 0; }
+}
+
+.page h3 {
+  font-size: 1.25em;
 }
