@@ -1,5 +1,7 @@
 <% wrap_layout :layout do %>
-  <h1><%= current_page.data.title || "Mera Falacia" %></H1>
+  <h1><%= current_page.data.title || "Mera Falacia" %>
+    <span class="sub"><%= current_page.date.strftime('%Y %b %e') %></span>
+  </h1>
   <article>
     <%= yield %>
   </article>
