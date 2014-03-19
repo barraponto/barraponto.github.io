@@ -28,6 +28,7 @@ footer > p {
   }
   aside {
     @include span-columns(3 omega);
+    margin-top: 2em;
   }
   footer > p {
     @include span-columns(9);
