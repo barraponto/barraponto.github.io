@@ -2,6 +2,7 @@
 title: "Middleman vs Jekyll: what's the difference?"
 date: 2014-03-30
 tags: dev
+lang: en
 ---
 
 When I went shopping for static generators, [Jekyll][1] was the first one I took
