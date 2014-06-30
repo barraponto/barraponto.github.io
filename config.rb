@@ -85,6 +85,9 @@ configure :development do
   activate :livereload
 end
 
+# i18n (might be overkill)
+activate :i18n, :mount_at_root => 'pt-BR'
+
 # Build-specific configuration
 configure :build do
   # Disable Compass source comments.

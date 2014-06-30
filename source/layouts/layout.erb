@@ -1,17 +1,15 @@
 <!doctype html>
-<html class="no-js">
+<html class="no-js" lang="pt-BR">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <!-- Use title if it's in the page YAML frontmatter -->
-
+        <% # Use title if it's in the page YAML frontmatter %>
         <title><%= [current_page.data.title, 'Mera Falácia'].select {|e| e} .join(' - ') %></title>
         <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
-        <meta name="description" content="O blog do Capi Etheriel">
+        <meta name="description" content="Blog de Capi Etheriel">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
-
         <%= stylesheet_link_tag 'normalize.css' %>
         <%= stylesheet_link_tag 'main.css' %>
         <%= stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Oswald:700' %>

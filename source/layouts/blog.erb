@@ -1,8 +1,9 @@
 <% wrap_layout :layout do %>
-  <h1><%= current_page.data.title || "Mera Falacia" %>
+  <h1 <%= tag_attributes(:lang => current_page.lang) %>>
+    <%= current_page.data.title || "Mera Falacia" %>
     <span class="sub"><%= current_page.date.strftime('%Y %b %e') %></span>
   </h1>
-  <article>
+  <article <%= tag_attributes(:lang => current_page.lang) %>>
     <%= yield %>
   </article>
 
