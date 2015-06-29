@@ -34,7 +34,7 @@ parser de XML.
 Para começar o loop, vamos carregar a URL e popular uma árvore de elementos --
 uma abstração do Python para podermos manipular mais facilmente esses dados:
 
-```python
+{% highlight python %}
 from xml.etree import ElementTree
 from urllib.request import urlopen
 
@@ -42,19 +42,19 @@ data_url = "http://www.portaltransparencia.gov.br/copa2014/api/rest/empreendimen
 
 with urlopen(data_url) as datafile:
     data = ElementTree.parse(datafile)
-```
+{% endhighlight %}
 
 Repare como carregar uma URL no Python 3 tem uma sintaxe confortável, idêntica
 à sintaxe de abrir arquivos. Agora pra seguir o loop, vamos extrair o que nos
 interessa: o gasto (`valorTotalPrevisto`) de cada empreendimento iniciado ou
 concluído (cujo `andamento` não esteja no estado `1`, `Não iniciado`).
 
-```python
+{% highlight python %}
 spending = [float(element.find('./valorTotalPrevisto').text)
             for element in data.iterfind('.//copa:empreendimento',
                                          namespaces={'copa': data_url[:46]})
             if element.find('./andamento/id').text != '1']
-```
+{% endhighlight %}
 
 Pegar elementos de um `ElementTree` é fácil usando o método `iterfind` (retorna
 um iterável, pra usar com for) ou `findall` (retorna uma lista propriamente
@@ -70,29 +70,29 @@ mas **os dados em si não são consistentes**. Nem todo elemento
 que retorna zero quando não existe valor total previsto (pra facilitar a soma,
 depois).
 
-```python
+{% highlight python %}
 def get_cost(element):
     cost = element.find('./valorTotalPrevisto')
     return 0 if (cost is None) else float(cost.text)
-```
+{% endhighlight %}
 
 Agora basta chamar o `get_cost` na nossa compreensão de lista:
 
-```python
+{% highlight python %}
 spending = [get_cost(element)
             for element in data.iterfind('.//copa:empreendimento',
                                          namespaces={'copa': data_url[:46]})
             if element.find('./andamento/id').text != '1']
-```
+{% endhighlight %}
 
 E aí podemos finalmente somar todos os valores encontrados e imprimir usando o
 poderoso método `format` do Python
 ([estude!](http://python.pro.br/material/cartao-format.pdf)).
 
-```python
+{% highlight python %}
 print('Foram gastos {total:.2f} dinheiros do governo brasileiro'.format(
     total=sum(spending)))
-```
+{% endhighlight %}
 
 Bônus: Uma versão mais idiomática (PYTHONICA) do código está disponível no meu
 Gist => https://gist.github.com/barraponto/21c705006635a1a72407. Fique à vontade

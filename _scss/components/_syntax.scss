@@ -8,8 +8,11 @@
   background-color: $smoke-color;
   font-size: 80%;
   margin: $spacing-m auto;
-  overflow: scroll;
+  overflow: auto;
   color: lighten($text-color, 30%);
+  pre {
+    overflow: visible;
+  }
 }
  
 code {
