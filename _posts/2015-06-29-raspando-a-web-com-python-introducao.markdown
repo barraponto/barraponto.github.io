@@ -95,7 +95,7 @@ print('Foram gastos {total:.2f} dinheiros do governo brasileiro'.format(
 {% endhighlight %}
 
 Bônus: Uma versão mais idiomática (PYTHONICA) do código está disponível no meu
-Gist => https://gist.github.com/barraponto/21c705006635a1a72407. Fique à vontade
+[Gist](https://gist.github.com/barraponto/21c705006635a1a72407). Fique à vontade
 para contribuir, comentar, melhorar, etc :)
 
 Agradecimentos ao Fernando Masanori que [começou a brincadeira com esses
