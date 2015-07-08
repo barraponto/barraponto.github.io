@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Freelancing until it's time to move on"
+title: "On freelancing again"
 date: '2015-07-08 17:40'
 ---
 
