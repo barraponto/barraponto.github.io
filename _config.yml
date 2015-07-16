@@ -27,13 +27,15 @@ github: barraponto
 
 # Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
 
-markdown: kramdown
+markdown: redcarpet
 permalink: pretty
 highlighter: pygments
 
 paginate: 5
 paginate_path: "/page/:num"
 
+redcarpet:
+    extensions: ['smart', 'autolink']
 # SCSS
 
 sass:
