@@ -4,14 +4,17 @@ name: "Mera Falacia"
 # Description of your content (will only be used on Google Search)
 description: "Blog pessoal de Capi Etheriel"
 
-# Your name. Will show in your footer + sidebar 
+# Your name. Will show in your footer + sidebar
 author: "Capi Etheriel"
 
 url: "http://barraponto.github.io"
 #baseurl: "/"
 
-# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words. 
-author-bio: "Web Developer, Web Designer, Web Scraper."
+# A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
+author-bio: |
+  Web Developer, Web Designer, Web Scraper.
+  Consultor em tecnologias Livres para Web.
+  Contribuidor Drupal, Scrapy, Python.
 
 # Social Accounts (mine, as placeholders)
 
