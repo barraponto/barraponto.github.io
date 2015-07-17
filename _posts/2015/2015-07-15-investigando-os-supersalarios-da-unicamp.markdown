@@ -67,7 +67,7 @@ Curiosamente, dos 100 primeiros resultados só 14 aparecem no site. O que signif
     scrapy crawl dgrh -a volume=666 supersalarios-top666.csv
 
 * [Resultado para os top 100 servidores][supersalarios-top100]
-* Resultado para os top 1000 servidores (ainda rodando)
+* [Resultado para os top 1000 servidores][supersalarios-top1000]
 
 ## Visualizando os dados
 
@@ -126,6 +126,7 @@ Fica a pergunta: porque temos tantas pessoas recebendo **menos de um salário m�
 [remuneracao-por-bruto]: /assets/files/remuneracao-por-bruto.csv
 [remuneracao-por-liquido]: /assets/files/remuneracao-por-liquido.csv
 [supersalarios-top100]: /assets/files/nomes-servidores-top100.csv
+[supersalarios-top1000]: /assets/files/nomes-servidores-top1000.csv
 [sumplot-csv]: /assets/files/sumplot.csv
 [countplot-csv]: /assets/files/countplot.csv
 
