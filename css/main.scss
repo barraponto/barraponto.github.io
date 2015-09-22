@@ -25,3 +25,8 @@
 // Pages
 @import 'pages/home';
 @import 'pages/posts';
+@import 'pages/contributions';
+
+// Octicons
+$octicons-font-path: "/assets/fonts/" !default;
+@import 'components/octicons';

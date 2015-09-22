@@ -1,0 +1,43 @@
+---
+layout: default
+title: DrupalGive
+---
+
+<section class="single-wrap">
+
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  {% for project in site.data.drupalorg %}
+  <div class="project">
+    <h2>{{ project[0] }}</h2>
+    <ul class="project-contributions">
+      {% for contribution in project[1] %}
+      <li class="project-contribution">
+        <div class="project-icon">
+          {% if contribution.contribution_type == 'issue' %}
+          <span class="mega-octicon octicon-issue-opened"></span>
+          {% elsif contribution.contribution_type == 'patch' %}
+          <span class="mega-octicon octicon-diff"></span>
+          {% elsif contribution.contribution_type == 'commit' %}
+          <span class="mega-octicon octicon-git-commit"></span>
+          {% endif %}
+        </div>
+        <p class="project-description">
+          {% if contribution.contribution_type == 'issue' %}
+          <a href="{{ contribution.url }}">{{ contribution.title }}</a>
+          {% elsif contribution.contribution_type == 'patch' %}
+          <a href="{{ contribution.url }}">{{ contribution.patch | split:'/' | last}}</a>
+          {% elsif contribution.contribution_type == 'commit' %}
+          <a href="{{ contribution.url }}">{{ contribution.commit | split:'/' | last }}</a>
+          {% endif %}
+          <time datetime="{{ contribution.date  }}">
+            {{ contribution.date | date: "%Y %b" }}
+          </time>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>
+
