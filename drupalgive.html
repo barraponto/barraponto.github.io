@@ -7,6 +7,12 @@ title: DrupalGive
 
   <h1 class="page-title">{{ page.title }}</h1>
 
+  <p>
+    These are all my contributions on drupal.org besides the eventual documentation page.
+    It was scraped using a pet peeve project of mine:
+    <a href="https://github.com/barraponto/scraping-drupalorg">Drupal.org Contribution Scraper</a>
+  </p>
+
   {% for project in site.data.drupalorg %}
   <div class="project">
     <h2>{{ project[0] }}</h2>
