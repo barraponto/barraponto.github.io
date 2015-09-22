@@ -1,0 +1,40 @@
+---
+layout: default
+title: FOSSGive
+---
+
+<section class="single-wrap">
+
+  <h1 class="page-title">{{ page.title }}</h1>
+
+  <p>
+    These are all my Free and Open source contributions on github.com.
+    You can see more FOSS contributions to the Drupal project on the <a href="/drupalgive">Drupalgive</a> page.
+  </p>
+
+  {% for project in site.data.github %}
+  <div class="project">
+    <h2>{{ project[0] }}</h2>
+    <ul class="project-contributions">
+      {% for contribution in project[1] %}
+      <li class="project-contribution">
+        <div class="project-icon">
+          {% if contribution.issue_type == 'issue' %}
+          <span class="mega-octicon octicon-issue-opened"></span>
+          {% elsif contribution.issue_type == 'pull_request' %}
+          <span class="mega-octicon octicon-git-pull-request"></span>
+          {% endif %}
+        </div>
+        <p class="project-description">
+          <a href="{{ contribution.issue_url }}">{{ contribution.title }}</a>
+          <time datetime="{{ contribution.date  }}">
+            {{ contribution.date | date: "%Y %b" }}
+          </time>
+        </p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>
+
