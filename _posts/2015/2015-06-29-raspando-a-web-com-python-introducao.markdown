@@ -50,10 +50,11 @@ interessa: o gasto (`valorTotalPrevisto`) de cada empreendimento iniciado ou
 concluído (cujo `andamento` não esteja no estado `1`, `Não iniciado`).
 
 ```python
-spending = [float(element.find('./valorTotalPrevisto').text)
-            for element in data.iterfind('.//copa:empreendimento',
-                                         namespaces={'copa': data_url[:46]})
-            if element.find('./andamento/id').text != '1']
+spending = [
+    float(element.find('./valorTotalPrevisto').text)
+    for element
+    in data.iterfind('.//copa:empreendimento', namespaces={'copa': data_url[:46]})
+    if element.find('./andamento/id').text != '1']
 ```
 
 Pegar elementos de um `ElementTree` é fácil usando o método `iterfind` (retorna
@@ -79,10 +80,11 @@ def get_cost(element):
 Agora basta chamar o `get_cost` na nossa compreensão de lista:
 
 ```python
-spending = [get_cost(element)
-            for element in data.iterfind('.//copa:empreendimento',
-                                         namespaces={'copa': data_url[:46]})
-            if element.find('./andamento/id').text != '1']
+spending = [
+    get_cost(element)
+    for element
+    in data.iterfind('.//copa:empreendimento', namespaces={'copa': data_url[:46]})
+    if element.find('./andamento/id').text != '1']
 ```
 
 E aí podemos finalmente somar todos os valores encontrados e imprimir usando o
