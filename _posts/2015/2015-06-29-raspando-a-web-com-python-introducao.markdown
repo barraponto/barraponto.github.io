@@ -2,6 +2,8 @@
 layout: post
 title: 'Raspando a Web com Python: Introdução '
 date: '2015-06-29 19:00 -0300'
+category: development
+tags: python, web scraping
 ---
 
 Todo projeto que deseja raspar dados da web se resume ao seguinte *loop*:

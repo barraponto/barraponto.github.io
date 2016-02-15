@@ -3,6 +3,8 @@
 layout: post
 title: "Investigando os supersalários da Unicamp"
 date: "2015-07-15 18:13"
+category: development
+tags: python, web scraping, transparencia hacker, unicamp
 ---
 
 A noticia de que existem supersalários na Unicamp é antiga, mas voltou a
