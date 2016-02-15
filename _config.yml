@@ -7,7 +7,7 @@ description: "Blog pessoal de Capi Etheriel"
 # Your name. Will show in your footer + sidebar
 author: "Capi Etheriel"
 
-url: "http://barraponto.github.io"
+url: "https://barraponto.blog.br"
 #baseurl: "/"
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
@@ -29,18 +29,20 @@ github: barraponto
 # ga_tracking_id: UA-47727049-1
 
 # Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
-
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
-highlighter: pygments
+highlighter: rouge
 
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+gems:
+  - jekyll-paginate
 paginate: 5
 paginate_path: "/page/:num"
 
-redcarpet:
-    extensions: ['smart', 'autolink']
 # SCSS
-
 sass:
   sass_dir: _scss
   style: :compressed
