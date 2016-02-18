@@ -20,9 +20,9 @@ siteImagesDir: "assets/images/"
 
 # URLs to tags/posts/categories JSON files
 # https://github.com/zhuochun/md-writer/wiki/Settings-for-Front-Matters
-urlForPosts: ""
-urlForTags: ""
-urlForCategories: ""
+urlForPosts: "http://barraponto.github.io/assets/meta/posts.json"
+urlForTags: "http://barraponto.github.io/assets/meta/tags.json"
+urlForCategories: "http://barraponto.github.io/assets/meta/categories.json"
 
 # The front matter key name
 frontMatterNameTags: "tags"
