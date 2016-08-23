@@ -1,0 +1,20 @@
+image: ruby:2.1
+
+before_script:
+  - apt-get update && apt-get install -y locales
+  - echo "en_US UTF-8" > /etc/locale.gen
+  - locale-gen en_US.UTF-8
+  - export LANG=en_US.UTF-8
+  - export LANGUAGE=en_US:en
+  - export LC_ALL=en_US.UTF-8
+
+pages:
+  stage: deploy
+  script:
+    - bundle install
+    - bundle exec jekyll build -d public
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
