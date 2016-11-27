@@ -12,7 +12,7 @@ ideal (leia o artigo linkado). O Gitlab Pages é uma alternativa completa.
 
 Curioso que o Gitlab Pages é uma extensão do serviço de Integração Contínua,
 o que permite rodar qualquer comando que resulte em arquivos estáticos.
-No Github Pages ou você compila localmente, na sua máquina, ou você usa o Jekyll
+No Github Pages ou você compila localmente, na sua máquhttps://github.com/barraponto/barraponto.github.io/blob/master/.gitlab-ci.ymlina, ou você usa o Jekyll
 [na versão que o Github usa][3], com os plugins que o Github permite. Compilar
 localmente ainda é uma boa idéia, mas automatizar a compilação na nuvem permite
 o uso da interface web para editar os artigos direto no Github/Gitlab. De todo
@@ -32,4 +32,4 @@ blog][7].
 [4]: http://blog.getpelican.com/
 [5]: http://gohugo.io/
 [6]: https://pages.gitlab.io/
-[7]: https://github.com/barraponto/barraponto.github.io/blob/master/.gitlab-ci.yml
+[7]: https://gitlab.com/barraponto/barraponto.gitlab.io/blob/master/.gitlab-ci.yml
