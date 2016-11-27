@@ -18,7 +18,7 @@ localmente ainda é uma boa idéia, mas automatizar a compilação na nuvem perm
 o uso da interface web para editar os artigos direto no Github/Gitlab. De todo
 modo, estou livre pra migrar para outros sistemas como [Pelican][4] ou [Hugo][5].
 
-De todo modo, para deixar documentado, o Gitlab Pages usa o Gitlab CI para
+E para deixar documentado, o Gitlab Pages usa o Gitlab CI para
 compilar e publicar o site. [As instruções são simples e tem exemplos][6].
 O principal é garantir que o seu script de CI tem um job chamado `pages` que
 compila os arquivos em uma pasta chamada `public`. Os nomes são obrigatórios.
