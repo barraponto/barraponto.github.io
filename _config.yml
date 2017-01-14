@@ -9,6 +9,7 @@ author: "Capi Etheriel"
 
 url: "https://barraponto.blog.br"
 #baseurl: "/"
+permalink: /:year/:month/:day/:title/
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
 author-bio: |
@@ -30,7 +31,6 @@ ga_tracking_id: UA-90326540-1
 
 # Other (refer to http://jekyllrb.com/docs/home/ for further details on the below)
 markdown: kramdown
-permalink: pretty
 highlighter: rouge
 
 kramdown:
