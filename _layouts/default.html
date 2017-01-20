@@ -1,8 +1,5 @@
-<!DOCTYPE html {% if page.layout == 'post' %}prefix="og: http://ogp.me/ns#"{% endif %}>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!DOCTYPE html>
+<html class="no-js" {% if page.layout == 'post' %}prefix="og: http://ogp.me/ns#"{% endif %}>
   <head>
       <title>{{ site.name }} - {{ site.description }}</title>
       <meta charset="utf-8">
@@ -31,10 +28,6 @@
   </head>
 
   <body>
-    <!--[if lt IE 7]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-    <![endif]-->
-
     <div class="off-canvas">
       <figure class="avatar">
         <img src="https://secure.gravatar.com/avatar/fa41d8fbd0879cee11da11ade94580b2?size=360px" alt="Picture" title="That's me, {{ site.author }}.">
