@@ -206,6 +206,51 @@ loaders:
       }
 ```
 
+## Usando CSS do Futuro: PostCSS e cssnext
+
+Como instalar: `yarn add --dev postcss-loader postcss-css-next`
+
+Enquanto alguns browsers correm atrás pra dar suporte ao CSS3, o CSS4 já está
+sendo desenvolvido pela W3C, inspirado entre outras coisas por recursos
+experimentados antes em preprocessadores como Less e Sass. Para não ter que
+perder tempo colocando prefixos e já poder usar a nova sintaxe, podemos usar o
+[PostCSS][postcss] para processar o nosso CSS.
+
+A configuração no Webpack é relativamente simples, mas exige mudar um pouquinho
+as opções do css-loader pra dar suporte ao `@import`:
+
+```javascript
+      {
+        test: /\.css$/,
+        use: [
+          {loader: 'style-loader'},
+          {
+            loader: 'css-loader',
+            // aplica 1 loader anterior (postcss-loader) nos css @importados
+            options: {importLoaders: 1},
+          },
+          // a configuração está em postcss.config.js
+          {loader: 'postcss-loader'},
+        ],
+      },
+```
+
+Como mencionado no comentário, é preciso escrever um arquivo de configuração, o
+`postcss.config.js` no mesmo diretório:
+
+```javascript
+var cssnext = require('postcss-cssnext');
+
+module.exports = {
+  plugins: [cssnext()],
+};
+```
+
+Por padrão, o cssnext coloca prefixos para as últimas duas versões de cada
+browser significativo (ie, chrome, firefox), todos os browsers com pelo menos
+1% de usuários e o Firefox ESR (a versão estável). Isso é configurável, dá uma
+olhada na documentação do [browserslist][browserslist].
+
 ## Gerando o HTML e incluindo o pacote
 
 Como instalar: `yarn add --dev webpack-dev-server@beta html-webpack-plugin`
@@ -277,7 +322,10 @@ Se você quiser ver um repositório com o resultado final, cheque
 [eslint]: http://eslint.org/
 [underscore]: http://underscorejs.org/
 [bootstrap]: http://getbootstrap.com/
+[postcss]: http://postcss.org/
+[cssnext]: http://cssnext.io/
 [standardjs]: http://standardjs.com/index.html
 [googlejs]: https://google.github.io/styleguide/jsguide.html
 [airbnbjs]: http://airbnb.io/javascript/
+[browserslist]: https://github.com/ai/browserslist#config-file
 [tree-shaking]: https://medium.com/@Rich_Harris/tree-shaking-versus-dead-code-elimination-d3765df85c80#.wysxxzryp
