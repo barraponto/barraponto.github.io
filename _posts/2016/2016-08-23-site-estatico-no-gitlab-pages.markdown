@@ -1,9 +1,10 @@
 ---
 layout: "post"
 title: "Site estático no Gitlab Pages"
+description: Dicas para quem quer hospedar Jekyll no Gitlab
 date: "2016-08-23 12:30"
-categories: development
-tags: jekyll, gitlab, github
+category: desenvolvimento
+tags: jekyll gitlab github
 ---
 
 Migrei o site do Github para o Gitlab, para poder usar HTTPS no meu site

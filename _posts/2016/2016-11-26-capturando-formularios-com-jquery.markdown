@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Capturando formulários com jQuery
+description: Como evitar que o formulário recarregue a página usando jQuery
 date: '2016-11-26 22:46'
-categories: development
-tags: 'jquery, mentoria'
+category: desenvolvimento
+tags: jquery mentoria
 ---
 
 Nesse tempo todo que eu estou trabalhando como mentor na [Thinkful.com][1], a

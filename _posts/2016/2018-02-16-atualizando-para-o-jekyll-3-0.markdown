@@ -1,9 +1,10 @@
 ---
 layout: "post"
 title: "Atualizando para o Jekyll 3.0"
+description: Um guia prático para quem quer usar o Jekyll no Github
 date: "2016-02-18 20:50"
-categories: development
-tags: jekyll, github
+category: desenvolvimento
+tags: jekyll github
 ---
 
 [Jekyll][jekyll-software] e [Github][github-service] são uma combinação simples

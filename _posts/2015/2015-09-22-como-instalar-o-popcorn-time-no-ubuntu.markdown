@@ -1,9 +1,10 @@
 ---
 layout: post
 title: "Como instalar o Popcorn Time no Ubuntu"
+description: DESATUALIZADO
 date: "2015-09-22 10:24"
-category: technology
-tags: ubuntu, popcorn time
+category: tecnologia
+tags: ubuntu popcorn time
 ---
 
 Os canalhas da anti-pirataria começaram a [atacar a comunidade ao redor do

@@ -1,9 +1,10 @@
 ---
 layout: post
 title: 'SQLAlchemy: Configurando multiplas relações com a mesma tabela'
+description: Como fazer uma só referência (backref) com duas relações diferentes
 date: '2016-02-18 22:16'
-category: development
-tags: 'python, sqlalchemy, flask'
+category: desenvolvimento
+tags: python sqlalchemy flask
 ---
 
 Um dos meus alunos na [Thinkful][thinkful-service] precisou configurar duas

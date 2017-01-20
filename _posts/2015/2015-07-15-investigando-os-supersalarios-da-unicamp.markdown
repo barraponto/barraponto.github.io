@@ -2,9 +2,10 @@
 
 layout: post
 title: "Investigando os supersalários da Unicamp"
+description: Usando software livre para analisar dados que deveriam ser abertos.
 date: "2015-07-15 18:13"
-category: development
-tags: python, web scraping, transparencia hacker, unicamp
+category: política
+tags: python web scraping transparencia hacker unicamp
 ---
 
 A noticia de que existem supersalários na Unicamp é antiga, mas voltou a

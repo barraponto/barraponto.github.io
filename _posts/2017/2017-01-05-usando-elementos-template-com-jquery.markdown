@@ -1,6 +1,9 @@
 ---
 layout: "post"
 title: "Usando elementos template com jQuery"
+description: Como usar `<template>` adequadamente com jQuery.
+category: desenvolvimento
+tags: jquery mentoria
 date: "2017-01-05 13:32"
 ---
 

@@ -1,9 +1,10 @@
 ---
 layout: "post"
 title: "Modo leitura no Vimperator"
+description: Use `gr` para ativar o modo leitura (EOM)
 date: "2016-02-15 23:54"
-category: technology
-tags: vimperator, firefox
+category: tecnologia
+tags: vimperator firefox
 ---
 
 Só um post breve para documentar: no [Vimperator][vimperator-software], o

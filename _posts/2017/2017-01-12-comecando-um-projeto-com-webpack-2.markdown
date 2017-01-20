@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Começando um projeto com Webpack 2
+description: Como usar Webpack 2 com PostCSS, Babel, ESLint e Hot Module Reloading
+category: desenvolvimento
+tags: webpack javascript mentoria
 date: '2017-01-12 23:04'
 ---
 
