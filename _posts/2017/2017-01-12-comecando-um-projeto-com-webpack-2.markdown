@@ -24,7 +24,7 @@ melhorias!
 
 ## Empacotamento (bundling)
 
-Como instalar: `yarn add --dev webpack@beta`
+Como instalar: `yarn add --dev webpack`
 
 O [Webpack][webpack] tem esse nome porque ele nasceu para empacotar o seu Javascript.
 Assim, no lugar de escrever mil tags `<script>`  no final do seu HTML, você só
