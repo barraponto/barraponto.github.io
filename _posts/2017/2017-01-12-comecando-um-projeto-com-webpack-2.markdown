@@ -256,7 +256,7 @@ olhada na documentação do [browserslist][browserslist].
 
 ## Gerando o HTML e incluindo o pacote
 
-Como instalar: `yarn add --dev webpack-dev-server@beta html-webpack-plugin`
+Como instalar: `yarn add --dev webpack-dev-server html-webpack-plugin`
 
 Quando você roda o Webpack, ele gera um arquivo `.js` com todo o código
 empacotado dentro. Aí você só precisa escrever a tag `<script>` no seu HTML,
