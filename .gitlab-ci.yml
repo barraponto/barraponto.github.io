@@ -13,6 +13,8 @@ pages:
   script:
     - bundle install
     - bundle exec jekyll build -d public
+    - mkdir -p public/.well-known/acme-challenge/
+    - cp -r .well-known public
   artifacts:
     paths:
       - public
