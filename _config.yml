@@ -39,7 +39,7 @@ kramdown:
   input: GFM
   hard_wrap: false
 
-gems:
+plugins:
   - jekyll-paginate
 paginate: 5
 paginate_path: "/page/:num"
