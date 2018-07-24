@@ -13,7 +13,6 @@ pages:
   script:
     - bundle install
     - bundle exec jekyll build -d public
-    - cp -r .well-known public
   artifacts:
     paths:
       - public
