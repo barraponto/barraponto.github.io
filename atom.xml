@@ -3,7 +3,7 @@
 
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ site.name }}</title>
+  <title>{{ site.title }}</title>
   <id>{{ site.url }}</id>
   <link href="{{ site.url }}" />
   <link href="{{ site.url }}/atom.xml" rel="self" />

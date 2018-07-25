@@ -1,5 +1,5 @@
 # Title of your blog; shows in the header
-name: "Mera Falacia"
+title: "Mera Falacia"
 
 # Description of your content (will only be used on Google Search)
 description: "Blog pessoal de Capi Etheriel"
@@ -8,7 +8,7 @@ description: "Blog pessoal de Capi Etheriel"
 author: "Capi Etheriel"
 
 url: "https://barraponto.blog.br"
-#baseurl: "/"
+baseurl: "/"
 permalink: /:year/:month/:day/:title/
 
 # A short presentation of yourself. Will show in the sidebar, under your name. Best usage would be between 30 to 50 words.
@@ -48,3 +48,6 @@ paginate_path: "/page/:num"
 sass:
   sass_dir: _scss
   style: :compressed
+
+# github-pages
+repository: barraponto/barraponto.github.io
