@@ -1,4 +1,4 @@
-image: ruby:2.3.3
+image: ruby:2.4
 
 before_script:
   - apt-get update && apt-get install -y locales
@@ -11,7 +11,8 @@ before_script:
 pages:
   stage: deploy
   script:
-    - bundle install
+    - gem install bundler
+    - bundle install --without development
     - bundle exec jekyll build -d public
   artifacts:
     paths:
